@@ -112,16 +112,22 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias 'instalar'='sudo apt install -y'
-alias 'remover'='sudo apt remove -y && sudo apt autoremove --purge -y'
+# APT
 alias 'atualizar'='sudo apt update && sudo apt upgrade -y'
+alias 'instalar'='sudo apt install -y'
+alias 'listar'='apt list --installed | grep '
+alias 'remover'='sudo apt remove -y && sudo apt autoremove --purge -y'
 
-alias 'free'='free -h'
-
-alias 'transferir'='bash /home/joao/Documentos/Scripts/transferir.sh'
-alias 'extrair'='bash /home/joao/Documentos/Scripts/extrair.sh' 
-alias 'ajustar'='bash /home/joao/Documentos/Scripts/ajustar.sh'
-
+# Pen-drives
 alias 'desmontar'='sudo umount /dev/sdb1'
-alias 'limpar'='desmontar && sudo fsck.vfat -a /dev/sdb1'
 alias 'formatar'='desmontar && sudo mkfs.vfat /dev/sdb1'
+alias 'limpar'='desmontar && sudo fsck.vfat -a /dev/sdb1'
+
+# Scripts
+alias 'ajustar'='bash /home/joao/Documentos/Scripts/ajustar.sh'
+alias 'comprimir'='bash /home/joao/Documentos/Scripts/comprimir.sh'
+alias 'extrair'='bash /home/joao/Documentos/Scripts/extrair.sh' 
+alias 'transferir'='bash /home/joao/Documentos/Scripts/transferir.sh'
+
+# Outros
+alias 'free'='free -h'
