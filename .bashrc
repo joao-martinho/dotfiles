@@ -125,7 +125,6 @@ alias 'limpar'='desmontar && sudo fsck.vfat -a /dev/sdb1'
 
 # Scripts
 alias 'ajustar'='bash /home/joao/Documentos/Scripts/ajustar.sh'
-alias 'comprimir'='bash /home/joao/Documentos/Scripts/comprimir.sh'
 alias 'extrair'='bash /home/joao/Documentos/Scripts/extrair.sh' 
 alias 'transferir'='bash /home/joao/Documentos/Scripts/transferir.sh'
 
